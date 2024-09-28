@@ -177,12 +177,11 @@ footer div h1 {
 
 @media (max-width: 850px) {
     body, html {
-        overflow-x: hidden ;
+        overflow-x: hidden;
     }
 
     header {
         flex-direction: column;
-        width: 100vw;
     }
 
     main header div:nth-child(2) {
