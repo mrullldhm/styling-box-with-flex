@@ -182,6 +182,7 @@ footer div h1 {
 
     header {
         flex-direction: column;
+        width: 85vw;
     }
 
     main header div:nth-child(2) {
