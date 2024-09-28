@@ -1,9 +1,14 @@
+
+body, html {
+    overflow-x: hidden;
+}
+
 main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     gap: 2rem;
-    flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 header {
@@ -15,8 +20,9 @@ header {
     border-radius: 20px;
     padding: 1.5rem;
     font-family: 'Inter', sans-serif;
-    width: 75rem;
     margin: 0 auto;
+    gap: 1.5rem;
+    flex-wrap: wrap;
 }
     
 
@@ -25,6 +31,7 @@ main header div {
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+
 }
 
 .logo {
@@ -68,7 +75,6 @@ button {
 }
 
 #banner div {
-    line-height: 80px;
     flex: 0 0 auto;
 }
 
@@ -109,6 +115,7 @@ button {
 
 .details h1{
     font-weight: normal;
+    font-family: 'Inter', sans-serif;
     width: 246px;
     font-size: 16px;
     color: #000000DE;
@@ -174,36 +181,17 @@ footer div h1 {
     text-align: left;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 850px) {
     header {
-        display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #2A2C2E;
-        color: whitesmoke;
-        border-radius: 20px;
-        padding: 1.5rem;
-        font-family: 'Inter', sans-serif;
-        width: 75rem;
-        gap: 2rem;
-        margin: 0 auto;
-        }
+        width: 100vw;
+    }
 
     main header div:nth-child(2) {
-        display: flex;
         flex-direction: column;
     }
 
     .row {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        box-sizing: border-box;
-        gap: 0.5rem;
     }
-
-   #content {
-    padding: 1rem;
-   }
 }
