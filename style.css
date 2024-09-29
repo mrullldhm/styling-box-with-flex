@@ -1,199 +1,225 @@
+/* Main container styles */
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 2rem;
-    margin: 0 auto;
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Stacks children vertically */
+    justify-content: space-around; /* Distributes space around children */
+    gap: 2rem; /* Space between child elements */
+    margin: 0 auto; /* Centers the main container */
 }
 
+/* Header styles */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #2A2C2E;
-    color: whitesmoke;
-    border-radius: 20px;
-    padding: 1.5rem;
-    font-family: 'Inter', sans-serif;
-    margin: 0 auto;
-    gap: 1.5rem;
-    flex-wrap: wrap;
+    display: flex; /* Enables flexbox layout for header */
+    justify-content: space-between; /* Distributes space between child elements */
+    align-items: center; /* Vertically centers items */
+    background-color: #2A2C2E; /* Dark background color */
+    color: whitesmoke; /* Text color */
+    border-radius: 20px; /* Rounded corners */
+    padding: 1.5rem; /* Inner spacing */
+    font-family: 'Inter', sans-serif; /* Font family */
+    margin: 0 auto; /* Centers the header */
+    gap: 1.5rem; /* Space between child elements */
+    flex-wrap: wrap; /* Allows wrapping of flex items */
 }
     
-
+/* Styles for divs inside the header */
 main header div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-
+    display: flex; /* Enables flexbox layout */
+    justify-content: space-between; /* Distributes space between items */
+    align-items: center; /* Vertically centers items */
+    gap: 1rem; /* Space between child elements */
 }
 
+/* Logo container styles */
 .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers logo */
+    align-items: center; /* Vertically centers logo */
+    flex-wrap: wrap; /* Allows logo items to wrap */
+    gap: 1rem; /* Space between logo elements */
 }
 
+/* Menu styles */
 .menu {
-    gap: 2rem;
-    color: #FFFFFF99;
+    gap: 2rem; /* Space between menu items */
+    color: #FFFFFF99; /* Light gray text color */
 }
 
+/* First menu item styles */
 .menu div:first-child {
-    color: #F4D867;
+    color: #F4D867; /* Highlighted color for the first item */
 }
 
+/* Button styles */
 button {
-    background-color: #F4CE47;
-    padding: 1rem;
-    margin-left: 2rem;
-    border-radius: 16px;
-    width: 100px;
+    background-color: #F4CE47; /* Button background color */
+    padding: 1rem; /* Inner spacing */
+    margin-left: 2rem; /* Left margin */
+    border-radius: 16px; /* Rounded corners */
+    width: 100px; /* Fixed button width */
 }
 
+/* Banner styles */
 #banner {
-    display: flex;  
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 80px;
-    background-color: #F4CE47;
-    gap: 1rem;
-    padding: 0rem 1rem;
-    font-size: 3rem;
-    font-family: 'Inter', sans-serif;
-    color: #F4BA30;
-    overflow: hidden; /* Hide overflowing elements */
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers banner content */
+    align-items: center; /* Vertically centers banner content */
+    text-align: center; /* Centers text */
+    height: 80px; /* Fixed height */
+    background-color: #F4CE47; /* Banner background color */
+    gap: 1rem; /* Space between banner items */
+    padding: 0rem 1rem; /* Inner spacing */
+    font-size: 3rem; /* Font size */
+    font-family: 'Inter', sans-serif; /* Font family */
+    color: #F4BA30; /* Text color */
+    overflow: hidden; /* Hides overflowing elements */
 }
 
+/* Individual banner item styles */
 #banner div {
-    flex: 0 0 auto;
+    flex: 0 0 auto; /* Prevents flex items from growing or shrinking */
 }
 
+/* Styles for the third child in the banner */
 #banner div:nth-child(3) {
-    color: #2A2C2E;
+    color: #2A2C2E; /* Darker color for the third item */
 }
 
+/* Content area styles */
 #content {
-    background-color: #2A2C2E;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem;
-    gap: 0.5rem;
+    background-color: #2A2C2E; /* Dark background */
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Stacks children vertically */
+    justify-content: center; /* Centers content */
+    align-items: center; /* Horizontally centers content */
+    padding: 3rem; /* Inner spacing */
+    gap: 0.5rem; /* Space between child elements */
 }
 
+/* Row styles for content */
 .row {
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-    gap: 0.5rem;
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers row content */
+    box-sizing: border-box; /* Includes padding in width/height calculations */
+    gap: 0.5rem; /* Space between child elements */
 }
 
+/* Column styles for content */
 .column {
-    display: flex;
-    flex-direction: column;
-    background-color: #FFFFFF;
-    padding: 1rem;
-    border-radius: 20px;
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Stacks children vertically */
+    background-color: #FFFFFF; /* White background */
+    padding: 1rem; /* Inner spacing */
+    border-radius: 20px; /* Rounded corners */
 }
 
-.column img{
-    height: 357px;
-    width: 246px;
-    border-radius: 12px;
+/* Image styles within columns */
+.column img {
+    height: 357px; /* Fixed height */
+    width: 246px; /* Fixed width */
+    border-radius: 12px; /* Rounded corners */
 }
 
-.details h1{
-    font-weight: normal;
-    font-family: 'Inter', sans-serif;
-    width: 246px;
-    font-size: 16px;
-    color: #000000DE;
+/* Details section title styles */
+.details h1 {
+    font-weight: normal; /* Normal font weight */
+    font-family: 'Inter', sans-serif; /* Font family */
+    width: 246px; /* Fixed width */
+    font-size: 16px; /* Font size */
+    color: #000000DE; /* Text color */
 }
 
+/* Styles for the first detail title */
 .details h1:first-child {
-    font-size: 14px;
-    color: #00000099;
+    font-size: 14px; /* Smaller font size */
+    color: #00000099; /* Lighter text color */
 }
 
+/* Styles for images in details */
 .details img {
-    width: 162px;
-    height: 32px;
+    width: 162px; /* Fixed width */
+    height: 32px; /* Fixed height */
 }
 
+/* Styles for the last detail title */
 .details h1:last-child {
-    font-size: 18px;
-    color: #000000DE;
+    font-size: 18px; /* Larger font size */
+    color: #000000DE; /* Text color */
 }
 
+/* Strikethrough style for span elements */
 span {
-    text-decoration: line-through;
-    color: #00000061;
-    ;
+    text-decoration: line-through; /* Adds a line through text */
+    color: #00000061; /* Text color */
 }
 
+/* Follow section styles */
 .follow {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #2A2C2E;
-    gap: 10rem;
-    padding: 1.5rem;
-    flex-wrap: wrap;
-    margin: 0 auto;
-
+    display: flex; /* Enables flexbox layout */
+    justify-content: space-between; /* Distributes space between items */
+    align-items: center; /* Vertically centers items */
+    background-color: #2A2C2E; /* Dark background color */
+    gap: 10rem; /* Space between elements */
+    padding: 1.5rem; /* Inner spacing */
+    flex-wrap: wrap; /* Allows wrapping of flex items */
+    margin: 0 auto; /* Centers the follow section */
+    width: 75vw; /* Fixed width */
 }
 
+/* Footer styles */
 footer {
-    background-color: #000000DE;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;    
-    padding: 1.5rem;
-    flex-wrap: wrap;
-    margin: 0 auto;
+    background-color: #000000DE; /* Dark footer background */
+    display: flex; /* Enables flexbox layout */
+    justify-content: space-between; /* Distributes space between items */
+    align-items: center; /* Vertically centers items */    
+    padding: 1.5rem; /* Inner spacing */
+    flex-wrap: wrap; /* Allows wrapping of flex items */
+    margin: 0 auto; /* Centers the footer */
+    width: 75vw; /* Fixed width */
 }
 
-footer div{
-    display: flex;
-    gap: 1rem;
-    color: #FFFFFF;
-    font-size: 12px;
+/* Styles for divs inside footer */
+footer div {
+    display: flex; /* Enables flexbox layout */
+    gap: 1rem; /* Space between child elements */
+    color: #FFFFFF; /* Text color */
+    font-size: 12px; /* Font size */
 }
 
+/* Styles for h1 elements inside footer divs */
 footer div h1 {
-    font-weight: normal;
-    font-family: Inter;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0.0015em;
+    font-weight: normal; /* Normal font weight */
+    font-family: Inter; /* Font family */
+    font-size: 12px; /* Font size */
+    font-weight: 400; /* Font weight */
+    line-height: 16px; /* Line height */
+    letter-spacing: 0.0015em; /* Letter spacing */
 }
 
+/* Responsive styles for screens smaller than 850px */
 @media (max-width: 850px) {
     body, html {
-        overflow-x: hidden;
+        overflow-x: hidden; /* Hides horizontal overflow */
     }
 
     header {
-        flex-direction: column;
-        width: 85vw;
+        flex-direction: column; /* Stacks header items vertically */
+        width: 85vw; /* Fixed width */
     }
 
     main header div:nth-child(2) {
-        flex-direction: column;
+        flex-direction: column; /* Stacks second header div items vertically */
     }
 
     .row {
-        flex-direction: column;
+        flex-direction: column; /* Stacks row items vertically */
     }
 
     .follow {
-        width: 90vw;
+        width: 90vw; /* Adjusts width for smaller screens */
+    }
+
+    footer {
+        width: 90vw; /* Adjusts footer width for smaller screens */
     }
 }
