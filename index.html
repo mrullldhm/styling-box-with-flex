@@ -1,171 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta information for character encoding and viewport settings for responsive design -->
+    <!-- Meta information for character encoding and responsive design settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- Link to external stylesheet -->
+    <!-- Link to the external stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
-        <!-- Header section containing the logo, menu, and login button -->
+        <!-- Header section containing the logo, navigation menu, and login button -->
         <header>
             <div class="logo">
                 <!-- Logo images -->
-                <img src="logo/Logo.png" alt="">
-                <img src="logo/Logo word.png" alt="">
+                <img src="logo/Logo.png" alt="Company logo">
+                <img src="logo/Logo word.png" alt="Company name">
             </div>
-            <!-- Menu items -->
-            <div class="menu">
-                <div>Books</div>
-                <div>Authors</div>
-                <div>What to Read?</div>
-                <div>Gift Ideas</div>
-                <div>About Us</div>
-            </div>
-            <!-- Additional menu with icons and login button -->
+            <!-- Main navigation menu -->
+            <nav class="menu">
+                <ul>
+                    <li><a class="home" href="#">Books</a></li>
+                    <li><a href="#">Authors</a></li>
+                    <li><a href="#">What to Read?</a></li>
+                    <li><a href="#">Gift Ideas</a></li>
+                    <li><a href="#">About Us</a></li>                    
+                </ul>
+            </nav>
+            <!-- Icon menu and login button -->
             <div>
                 <div class="menu">
-                    <img src="logo/Search.png" alt="">
-                    <img src="logo/Bookmark.png" alt="">
-                    <img src="logo/Chart.png" alt="">
+                    <img src="logo/Search.png" alt="Search">
+                    <img src="logo/Bookmark.png" alt="Bookmark">
+                    <img src="logo/Cart.png" alt="Shopping Cart">
                 </div>
                 <button>LOGIN</button>
             </div>
         </header>
 
-        <!-- Banner section for highlighting content like "ALL BOOKS" -->
-        <div id="banner">
-            <div>ALL BOOKS</div>
-            <div>ALL BOOKS</div>
-            <div>ALL BOOKS</div>
-            <div>ALL BOOKS</div>
-            <div>ALL BOOKS</div>
-        </div>
+        <!-- Banner section for highlighting key content -->
+        <section id="banner">
+            <h1>ALL BOOKS</h1>
+            <h1>ALL BOOKS</h1>
+            <h1>ALL BOOKS</h1>
+            <h1>ALL BOOKS</h1>
+            <h1>ALL BOOKS</h1>
+        </section>
 
-        <!-- Main content area displaying books in rows and columns -->
-        <div id="content">
+        <!-- Main content area displaying books -->
+        <section id="content">
             <!-- First row of book entries -->
             <div class="row">
-                <!-- Each book entry in a column with details -->
-                <div class="column">
-                    <img src="img/adam smith.jpg" alt="">
+                <!-- Individual book entry -->
+                <article class="column">
+                    <img src="img/adam smith.jpg" alt="The Wealth of Nations book cover">
                     <div class="details">
-                        <h1>Adam Smith</h1>
-                        <h1>The Wealth of Nations</h1>
-                        <img src="logo/Comments.png" alt="">
-                        <h1><span>$15.50</span> $10.50</h1>
+                        <h2>Adam Smith</h2>
+                        <p>The Wealth of Nations</p>
+                        <img src="logo/Comments.png" alt="Comments">
+                        <p><span>$15.50</span> $10.50</p>
                     </div>
-                </div>
-                <div class="column">
-                    <img src="img/Margarita.jpg" alt="">
+                </article>
+
+                <article class="column">
+                    <img src="img/Margarita.jpg" alt="Mater Margarita book cover">
                     <div class="details">
-                        <h1>Mikhail Bulgakov</h1>
-                        <h1>Mater Margarita</h1>
-                        <img src="logo/Comments.png" alt="">
-                        <h1><span>$15.50</span> $10.50</h1>
+                        <h2>Mikhail Bulgakov</h2>
+                        <p>Mater Margarita</p>
+                        <img src="logo/Comments.png" alt="Comments">
+                        <p><span>$15.50</span> $10.50</p>
                     </div>
-                </div>
-                <div class="column">
-                    <img src="img/memoris.jpg" alt="">
+                </article>
+
+                <article class="column">
+                    <img src="img/memoris.jpg" alt="From the Memoirs of a Non-Enemy Combatant book cover">
                     <div class="details">
-                        <h1>Alex Gilvarry</h1>
-                        <h1>From the Memoirs of a Non-Enemy Combatant</h1>
-                        <img src="logo/Comments.png" alt="">
-                        <h1>$10.50</h1>
+                        <h2>Alex Gilvarry</h2>
+                        <p>From the Memoirs of a Non-Enemy Combatant</p>
+                        <img src="logo/Comments.png" alt="Comments">
+                        <p>$10.50</p>
                     </div>
-                </div>
+                </article>
             </div>
 
-            <!-- More rows for other books with similar structure -->
+            <!-- Second row of books -->
             <div class="row">
-                <div class="column">
-                    <img src="img/ness.jpg" alt="">
+                <article class="column">
+                    <img src="img/ness.jpg" alt="More Than This book cover">
                     <div class="details">
-                        <h1>Patrick Ness</h1>
-                        <h1>More Than This</h1>
-                        <img src="logo/Comments.png" alt="">
-                        <h1>$10.50</h1>
+                        <h2>Patrick Ness</h2>
+                        <p>More Than This</p>
+                        <img src="logo/Comments.png" alt="Comments">
+                        <p>$10.50</p>
                     </div>
-                </div>
-                <div class="column">
-                    <img src="img/hello.jpg" alt="">
+                </article>
+
+                <article class="column">
+                    <img src="img/hello.jpg" alt="Hello I am Erik book cover">
                     <div class="details">
-                        <h1>Erik Spiekermann</h1>
-                        <h1>Hello I am Erik</h1>
-                        <img src="logo/Comments.png" alt="">
-                        <h1>$10.50</h1>
+                        <h2>Erik Spiekermann</h2>
+                        <p>Hello I am Erik</p>
+                        <img src="logo/Comments.png" alt="Comments">
+                        <p>$10.50</p>
                     </div>
-                </div>
-                <div class="column">
-                    <img src="img/the godfather.jpg" alt="">
+                </article>
+
+                <article class="column">
+                    <img src="img/the godfather.jpg" alt="The Godfather book cover">
                     <div class="details">
-                        <h1>Mario Puzo</h1>
-                        <h1>The Godfather</h1>
-                        <img src="logo/Comments.png" alt="">
-                        <h1><span>$15.50</span> $10.50</h1>
+                        <h2>Mario Puzo</h2>
+                        <p>The Godfather</p>
+                        <img src="logo/Comments.png" alt="Comments">
+                        <p><span>$15.50</span> $10.50</p>
                     </div>
-                </div>
+                </article>
             </div>
 
             <!-- Final row of books -->
             <div class="row">
-                <div class="column">
-                    <img src="img/danielo.jpg" alt="">
+                <article class="column">
+                    <img src="img/danielo.jpg" alt="The Names book cover">
                     <div class="details">
-                        <h1>Don Delillo</h1>
-                        <h1>The Names</h1>
-                        <img src="logo/Comments.png" alt="">
-                        <h1>$10.50</h1>
+                        <h2>Don Delillo</h2>
+                        <p>The Names</p>
+                        <img src="logo/Comments.png" alt="Comments">
+                        <p>$10.50</p>
                     </div>
-                </div>
-                <div class="column">
-                    <img src="img/sa.jpg" alt="">
-                    <div class="details">
-                        <h1>Daniel Gargallo</h1>
-                        <h1>She Beyond Sun</h1>
-                        <img src="logo/Comments.png" alt="">
-                        <h1><span>$15.50</span> $10.50</h1>
-                    </div>
-                </div>
-                <div class="column">
-                    <img src="img/muscle.jpg" alt="">
-                    <div class="details">
-                        <h1>Alan Trotter</h1>
-                        <h1>Muscle</h1>
-                        <img src="logo/Comments.png" alt="">
-                        <h1>$22.50</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
+                </article>
 
-        <!-- Follow section with social media icons -->
-        <div class="follow">
+                <article class="column">
+                    <img src="img/sa.jpg" alt="She Beyond Sun book cover">
+                    <div class="details">
+                        <h2>Daniel Gargallo</h2>
+                        <p>She Beyond Sun</p>
+                        <img src="logo/Comments.png" alt="Comments">
+                        <p><span>$15.50</span> $10.50</p>
+                    </div>
+                </article>
+
+                <article class="column">
+                    <img src="img/muscle.jpg" alt="Muscle book cover">
+                    <div class="details">
+                        <h2>Alan Trotter</h2>
+                        <p>Muscle</p>
+                        <img src="logo/Comments.png" alt="Comments">
+                        <p>$22.50</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Follow section with logo and social media links -->
+        <section class="follow">
             <div class="logo">
-                <img src="logo/Logo.png" alt="">
-                <img src="logo/Logo word.png" alt="">
+                <img src="logo/Logo.png" alt="Company logo">
+                <img src="logo/Logo word.png" alt="Company name">
             </div>
             <!-- Social media icons -->
-            <div class="logo">
-                <img src="logo/insta.png" alt="">
-                <img src="logo/fb.png" alt="">
-                <img src="logo/twitter.png" alt="">
+            <div class="social-media">
+                <img src="logo/insta.png" alt="Instagram">
+                <img src="logo/fb.png" alt="Facebook">
+                <img src="logo/twitter.png" alt="Twitter">
             </div>
-        </div>
+        </section>
     </main>
 
-    <!-- Footer section with terms, privacy policy, and contact info -->
+    <!-- Footer section containing links and contact information -->
     <footer>
         <div>
-            <h1>Terms and conditions</h1>
-            <h1>Privacy policy</h1>
+            <a href="#">Terms and conditions</a>
+            <a href="#">Privacy policy</a>
         </div>
         <div>
-            <h1>+44 1332 412251</h1>
-            <h1>support@bbookshelf.com</h1>
+            <p>+44 1332 412251</p>
+            <p><a href="mailto:support@bbookshelf.com">support@bbookshelf.com</a></p>
         </div>
     </footer>
 </body>

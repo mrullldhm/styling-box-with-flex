@@ -1,3 +1,8 @@
+* {
+    overflow-x: hidden; /* Hides horizontal overflow */
+    box-sizing: border-box;
+}
+
 /* Main container styles */
 main {
     display: flex; /* Enables flexbox layout */
@@ -20,6 +25,7 @@ header {
     margin: 0 auto; /* Centers the header */
     gap: 1.5rem; /* Space between child elements */
     flex-wrap: wrap; /* Allows wrapping of flex items */
+    width: 85vw; /* Fixed width */
 }
     
 /* Styles for divs inside the header */
@@ -39,14 +45,31 @@ main header div {
     gap: 1rem; /* Space between logo elements */
 }
 
-/* Menu styles */
-.menu {
+/* Navigation menu styles */
+.menu ul{
+    display: flex; /* Enables flexbox layout */
+    justify-content: space-between; /* Distributes space between items */
+    align-items: center; /* Vertically centers items */
     gap: 2rem; /* Space between menu items */
+}
+
+.menu ul li {
+    list-style-type: none;
+}
+
+.menu ul li a {
     color: #FFFFFF99; /* Light gray text color */
+    text-decoration: none;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.0015em;
+    text-align: center;
 }
 
 /* First menu item styles */
-.menu div:first-child {
+.menu a.home {
     color: #F4D867; /* Highlighted color for the first item */
 }
 
@@ -57,7 +80,12 @@ button {
     margin-left: 2rem; /* Left margin */
     border-radius: 16px; /* Rounded corners */
     width: 100px; /* Fixed button width */
+    cursor: pointer;             /* Pointer cursor on hover */
 }
+
+button:hover {
+    transform: scale(1.05);      /* Slightly enlarge on hover */
+  }
 
 /* Banner styles */
 #banner {
@@ -69,19 +97,20 @@ button {
     background-color: #F4CE47; /* Banner background color */
     gap: 1rem; /* Space between banner items */
     padding: 0rem 1rem; /* Inner spacing */
-    font-size: 3rem; /* Font size */
-    font-family: 'Inter', sans-serif; /* Font family */
-    color: #F4BA30; /* Text color */
     overflow: hidden; /* Hides overflowing elements */
 }
 
 /* Individual banner item styles */
-#banner div {
+#banner h1 {
     flex: 0 0 auto; /* Prevents flex items from growing or shrinking */
+    font-size: 3rem; /* Font size */
+    font-family: 'Inter', sans-serif; /* Font family */
+    color: #F4BA30; /* Text color */
+    font-weight: normal; /* Normal font weight */
 }
 
 /* Styles for the third child in the banner */
-#banner div:nth-child(3) {
+#banner h1:nth-child(3) {
     color: #2A2C2E; /* Darker color for the third item */
 }
 
@@ -108,9 +137,13 @@ button {
 .column {
     display: flex; /* Enables flexbox layout */
     flex-direction: column; /* Stacks children vertically */
+    justify-content: center;
+    align-items: center;
     background-color: #FFFFFF; /* White background */
     padding: 1rem; /* Inner spacing */
     border-radius: 20px; /* Rounded corners */
+    width: 294px; /* Fixed width */
+    height: 577px;
 }
 
 /* Image styles within columns */
@@ -121,28 +154,45 @@ button {
 }
 
 /* Details section title styles */
-.details h1 {
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     font-weight: normal; /* Normal font weight */
     font-family: 'Inter', sans-serif; /* Font family */
     width: 246px; /* Fixed width */
-    font-size: 16px; /* Font size */
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.0015em;
+    text-align: left;
     color: #000000DE; /* Text color */
+    margin-top: 0;
 }
 
 /* Styles for the first detail title */
-.details h1:first-child {
-    font-size: 14px; /* Smaller font size */
+.details h2 {
+    margin-bottom: 0;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.0015em;
+    text-align: left;
     color: #00000099; /* Lighter text color */
 }
 
 /* Styles for images in details */
 .details img {
     width: 162px; /* Fixed width */
-    height: 32px; /* Fixed height */
+    height: 52px; /* Fixed height */
+    padding-bottom: 1rem;
 }
 
 /* Styles for the last detail title */
-.details h1:last-child {
+.details p {
+    margin-top: 0;
     font-size: 18px; /* Larger font size */
     color: #000000DE; /* Text color */
 }
@@ -151,6 +201,9 @@ button {
 span {
     text-decoration: line-through; /* Adds a line through text */
     color: #00000061; /* Text color */
+    padding-right: 0.5rem; /* Right padding */
+    font-size: 18px;
+    text-align: left;
 }
 
 /* Follow section styles */
@@ -163,7 +216,7 @@ span {
     padding: 1.5rem; /* Inner spacing */
     flex-wrap: wrap; /* Allows wrapping of flex items */
     margin: 0 auto; /* Centers the follow section */
-    width: 75vw; /* Fixed width */
+    width: 85vw; /* Fixed width */
 }
 
 /* Footer styles */
@@ -175,7 +228,7 @@ footer {
     padding: 1.5rem; /* Inner spacing */
     flex-wrap: wrap; /* Allows wrapping of flex items */
     margin: 0 auto; /* Centers the footer */
-    width: 75vw; /* Fixed width */
+    width: 85vw; /* Fixed width */
 }
 
 /* Styles for divs inside footer */
@@ -183,11 +236,6 @@ footer div {
     display: flex; /* Enables flexbox layout */
     gap: 1rem; /* Space between child elements */
     color: #FFFFFF; /* Text color */
-    font-size: 12px; /* Font size */
-}
-
-/* Styles for h1 elements inside footer divs */
-footer div h1 {
     font-weight: normal; /* Normal font weight */
     font-family: Inter; /* Font family */
     font-size: 12px; /* Font size */
@@ -196,18 +244,23 @@ footer div h1 {
     letter-spacing: 0.0015em; /* Letter spacing */
 }
 
+footer div a {
+    text-decoration: none;
+    color: inherit;         /* Resets color to inherit from the parent element */
+}
+
 /* Responsive styles for screens smaller than 850px */
 @media (max-width: 850px) {
-    body, html {
-        overflow-x: hidden; /* Hides horizontal overflow */
+    main {
+       margin: 0 auto; /* Removes margin */
     }
 
     header {
         flex-direction: column; /* Stacks header items vertically */
-        width: 85vw; /* Fixed width */
+        width: 100%;
     }
 
-    main header div:nth-child(2) {
+    .menu ul {
         flex-direction: column; /* Stacks second header div items vertically */
     }
 
@@ -216,10 +269,11 @@ footer div h1 {
     }
 
     .follow {
-        width: 90vw; /* Adjusts width for smaller screens */
+        gap: 1rem;
+        width: 100%;
     }
 
     footer {
-        width: 90vw; /* Adjusts footer width for smaller screens */
+        width: 100%;
     }
 }
