@@ -192,7 +192,7 @@ button:hover {
 /* Styles for the last detail title */
 .details p {
     margin-top: 0;
-    font-size: 18px; /* Larger font size */
+    font-size: 16px; /* Larger font size */
     color: #000000DE; /* Text color */
 }
 
